@@ -1,0 +1,1 @@
+* Within the world of wrestling, there are winners and there are losers. The winners are labeled as "Superstars" while the losers are given the lowly title of "Jobber". Using a function, create the code necessary to search through a list of wrestlers, determine their win, loss, and draw percentages.

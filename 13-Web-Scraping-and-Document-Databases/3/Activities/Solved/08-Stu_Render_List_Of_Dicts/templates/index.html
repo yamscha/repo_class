@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hurricanes!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style>
+  div{
+    /* width: 100px; */
+      /* height: 100px; */
+      /* background-color: red; */
+      animation-name: example;
+      animation-duration: 4s;
+  }
+  
+  li{
+    animation-name: example1;
+      animation-duration: 4s;
+  }
+  @-webkit-keyframes example {
+      from {background-color: red;}
+      to {background-color: yellow;}
+  }
+ 
+  
+
+  </style>
+<body>
+  <div class="container text-center">
+    <h1 class="jumbotron" style="color:darkgreen">2017 Best Telugu Movies</h1>
+    <div>
+      <ul style="list-style: none;">
+        {% for dict_item in list %}
+          {% for key, value in dict_item.items() %}
+            <li style="color:blue">{{key}}: {{value}}</li>
+          {% endfor %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
